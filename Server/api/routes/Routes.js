@@ -1,18 +1,16 @@
-'use strict';
-module.exports = function(app) {
+module.exports = function (app) {
   var gamecontroller = require('../controllers/Controller');
 
-//Routes for testing
+  //Routes for testing
   app.route('/ping')
-    .get((req, res)=> {
-      res.json({ping : "pong", methode : req.method})}
-      );
-  app.route('/time')
-    .get((req, res)=> {
-      res.json({timestamp : (new Date(Date.now())).toLocaleString('fr-FR'), methode : req.method})}
-      );
-      
-//real routes
+    .get((req, res) => {
+      res.json({
+        ping: "pong",
+        methode: req.method
+      });
+    });
+
+  //real routes
 
   /*join a new game, 
   passing username in parameter, 
