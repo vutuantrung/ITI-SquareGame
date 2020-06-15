@@ -1,0 +1,87 @@
+<style>
+    .grid
+    {
+        display:flex;
+        flex-direction:column;
+    }
+    .row
+    {
+        display:flex;
+        flex-direction:row;
+    }
+    .point
+    {
+        width: 10px;
+        height: 10px;
+        border-radius: 3px;
+        background: black;
+    }
+    .edge
+    {
+        position:relative;
+        z-index: 20;
+    }
+    .horizontal
+    {
+        width: 50px;
+        height: 10px;
+    }
+    .vertical
+    {
+        width: 10px;
+        height: 50px;
+    }
+    .square
+    {
+        background: beige;
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+    }
+
+    .neutral
+    {
+        background: grey;
+
+    }
+
+    .red
+    {
+        background: red;
+    }
+
+    .neutral:hover
+    {
+        background: violet;
+        box-shadow: 0 0 20px purple;
+    }
+</style>
+<div class="grid">
+    <div class="row" id="row1">
+        <div class="point"></div>
+        <div class="edge horizontal red" id="1" onclick="console.log('clicked !')"></div>
+        <div class="point"></div>
+        <div class="edge horizontal neutral" id="2"></div>
+        <div class="point"></div>
+        <div class="edge horizontal neutral" id="3"></div>
+        <div class="point"></div>
+    </div>
+    <div class="row" id="row2">
+        <div class="edge vertical neutral"></div>
+        <div class="square"></div>
+        <div class="edge vertical neutral"></div>
+        <div class="square"></div>
+        <div class="edge vertical neutral"></div>
+        <div class="square"></div>
+        <div class="edge vertical neutral"></div>
+    </div>
+    <div class="row" id="row3">
+        <div class="point"></div>
+        <div class="edge horizontal neutral"></div>
+        <div class="point"></div>
+        <div class="edge horizontal neutral"></div>
+        <div class="point"></div>
+        <div class="edge horizontal neutral"></div>
+        <div class="point"></div>
+    </div>
+</div>

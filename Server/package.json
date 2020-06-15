@@ -1,0 +1,28 @@
+{
+  "name": "squaregameserverapi",
+  "version": "1.0.0",
+  "description": "server for the functionnal study project squaregame",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinVB/SquareGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuentinVB/SquareGame/issues"
+  },
+  "homepage": "https://github.com/QuentinVB/SquareGame#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "uuid": "^8.1.0"
+  }
+}
